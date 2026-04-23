@@ -127,8 +127,8 @@ STATIC_URL = 'static/'
 CORS_ALLOW_ALL_ORIGINS = True
 
 # Celery Configuration
-CELERY_BROKER_URL = 'redis://localhost:6379/0'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+CELERY_BROKER_URL = 'rediss://default:gQAAAAAAAZs-AAIgcDE4OTJhNGVkNWE1MzU0MjQ2YmU0MjJjZTA1ZDcwNDQ5Nw@humane-peacock-105278.upstash.io:6379?ssl_cert_reqs=CERT_NONE'
+CELERY_RESULT_BACKEND = 'rediss://default:gQAAAAAAAZs-AAIgcDE4OTJhNGVkNWE1MzU0MjQ2YmU0MjJjZTA1ZDcwNDQ5Nw@humane-peacock-105278.upstash.io:6379?ssl_cert_reqs=CERT_NONE'
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
